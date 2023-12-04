@@ -1,0 +1,25 @@
+클론(clone) :원격 저장소를 지역 저장소로 복제
+
+깃허브 원격 저장소 생성
+-저장소 이름 git-clone
+-https 주소 복사
+
+$git clone[복사된 - 주소]
+-원격저장소에 동일한 이름으로 복제
+$git clone [복사된- 주소][새로운 - 폴더명]
+-하부폴더[새로운-폴더명]이름으로 복제
+$git clone[복제된- 주소]
+-현재 폴더에 바로 복제
+
+$git remote
+-원격 저장소 별칭 이름 점검
+$git remote - v
+-저장소 주소등 워녁 저장소 정보 목록 표시
+
+$git remote add origin URL
+-이름 수정
+$git remote rm org
+-삭제
+
+유명 oss
+vscode,atom,vcs깃, 구글 인공지능 라이브러리
