@@ -11,4 +11,17 @@ osI :  open source intiative
 대부분의웹을 지언하는 서비스 스택 모델: LAMP
 LAMP : Linux, APache, Mysql, PHP의 앞 이니셜을 땀
 
+GPL(GNU - General Public License)
+자유 소프트웨어 재단에서 만든 라이선스
+AGPL(GNU - Affero GPL)
+GPL을 기반으로 만든 라이선스
+LGPL(GNU - Lesser GPL)
+보다 보안된 GPL 라이선스
+APache License
+소스코드 공개에 대한 의무사항은 라이선스에 포함x
+MIT License
+MIT에서 학생들을 지원하기 위해 만든 라이선스
 
+Strong Copy/2차 저작물 소스코드 공개의무 o/ GPL
+Weak copyleft/특정 조건에서 2차 저작물 소스코드 공개 의무 x/ LGPL
+Non copyleft/2차 저작물 소스코드 공개의무 x/ Apache, BSD, MIT
