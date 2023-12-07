@@ -1,0 +1,51 @@
+stash
+사전적 의미: 놓다, 남겨두다, 감추다, 안전한 곳에 숨겨두다.
+변경사항을 숨기거나 비밀리에 저장할 수 있는 도구
+따로 안전한 곳에 저장했다가 다시 가져올 수 있는 기능
+자료 넣은 것을 push, 자료 빼기 pop
+Data(push) -> 최근 데이터 -> Data(pop) => 스택구조 (Last in - Frist out) LIFO
+
+브랜치 이동          |
+$ git switch bname  |     but
+이전 커밋 이동       |      ===>커밋할것이 x, 작업 트리가 깨끗해야 함 
+$ git checkout HEAD~|
+
+                              이동
+            ----------------------------------->      
+                              ----------------->
+/작업 디렉토리/ = /스테이징 영역/ =  /깃 저장소/ /임시저장(Stash)/
+                             <----          --->
+            <---------------------          copy
+                  예전 내용 copy
+
+$ git stash = $ git stash save
+$ git stash - m'메시지' = $ git stash save'메시지'
+
+-- keep - index, -k = 스테이징 영역은 제외하고 작업 폴더만 저장
+--include -untracked, -u : untracked 파일도 포함해 저장
+
+$ git stash apply : 디렉토리 내용만 다시 복사해 활용
+$ git stash apply -- index: 스테이징 영역도 함께 복사
+--patch, -p : 대화형 프롬프트를 통해 저장할 파일과 저장 안 할 파일 지정가능
+$ git stash list           
+stash@{0} -> 최신
+stash@{1} -> 오래된 Data
+
+$ git stash show : 해당 stash 항목이 생성되었을 때의 커밋 자료와 최신 Stash 항목이 생성되었을 때의 커밋 자료와 최신 stash 항목 간의 차이로 표시
+해당 stash 항목이 생성되었을 때의 커밋 자료와 해당 stash 항목간의 차이로 표시
+$ git stash show stash@{n} - p
+-p : 내용의 차이까지 보이기
+
+stash 내용을  반영 
+$ git stash apply : 작업디렉토리만 삭제 안하고 반영
+$ git stash pop : 작업디렉토리만 삭제 하고 반영
+$ git stash stash@{n} : 중간에 있는 목록 반영
+
+$ git stash apply --index stash@{n}: Stash 영영 반영, 삭제 x 
+$ git stash drop 최근 임시내용 삭제
+# git stash  stash@{n} : 지정 임시 내용 삭제
+
+
+$ git stash
+$ git clear - f : 무조건 삭제
+$ git clear - i : 선택 삭제
