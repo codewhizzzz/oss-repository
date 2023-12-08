@@ -27,3 +27,9 @@ $ git commit -- amend -- no -edit
 -rebase의 --interactive HEAD~3
 HEAD~3 : 수정할 커밋의 직전 커밋
 시제 HEAD~2부터 수정 가능
+
+#rebase의 --interactive HEAD ~3 주요 명령어
+-기본 편집기로 열리며, HEAD ~3이면 HAED~2, HEAD ~1, HEAD 3개의 행을 편집 가능
+-로그 결과의 다르게 오래된 커밋부터 표시
+
+
