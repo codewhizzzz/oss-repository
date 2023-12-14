@@ -14,7 +14,7 @@ $git clone[복제된- 주소]
 $git remote
 -원격 저장소 별칭 이름 점검
 $git remote - v
--저장소 주소등 워녁 저장소 정보 목록 표시
+-저장소 주소등 원격 저장소 정보 목록 표시
 
 $git remote add origin URL
 -이름 수정
